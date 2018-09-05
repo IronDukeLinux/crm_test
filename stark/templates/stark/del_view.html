@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/form.css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-2">
+            {% include "stark/ad.html" %}
+        </div>
+        <div class="col-md-8">
+            <div class="page-header">
+                <h1><span class="glyphicon glyphicon-knight"></span>
+                    <small>确认删除？</small>
+                    {#                    <a href="{{ add_url }}" class="btn btn-success pull-right btn-lg">添加</a>#}
+                </h1>
+            </div>
+            <form action="" method="post">
+                {% csrf_token %}
+{#                <input type="submit" value="确认">#}
+                <button class="btn btn-warning">确认</button>
+            <a class="btn btn-success" href="{{ list_url }}">取消</a>
+            </form>
+        </div>
+        <div class="col-md-2">
+            {% include "stark/ad.html" %}
+        </div>
+    </div>
+</div>
+</body>
+</html>

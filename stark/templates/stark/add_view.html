@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/form.css">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-2">
+            {% include "stark/ad.html" %}
+        </div>
+        <div class="col-md-8">
+            <div class="page-header">
+                <h1><span class="glyphicon glyphicon-knight"></span>
+                    <small>添加数据</small>
+{#                    <a href="{{ add_url }}" class="btn btn-success pull-right btn-lg">添加</a>#}
+                </h1>
+            </div>
+            {% include "stark/form.html" %}
+        </div>
+        <div class="col-md-2">
+            {% include "stark/ad.html" %}
+        </div>
+    </div>
+</div>
+<script src="/static/js/add_or_edit.js"></script>
+</body>
+</html>
